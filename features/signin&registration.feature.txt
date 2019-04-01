@@ -1,0 +1,27 @@
+Feature: Signin feature
+
+  Scenario: Signin page
+    Given I launch http://localhost:3000/signin
+    And I enter Email
+    And I enter Password
+    when i click Sign in
+    Then I should see the welcome message
+
+Feature: registration feature
+
+  Scenario: New Account registration
+    Given I launch http://localhost:3000/register
+    And I enter Email
+    And I enter Password
+    when i click createaccount
+    Then I should see the New profile cucumber
+    And I enter name
+    And I enter surname
+    And I enter dob
+    when i click create profile
+    Then New address page should open
+    And I enter street
+    And i enter house number
+    ANd i enter postcode
+    when i click create address
+    Then i shouls see new confirmation page

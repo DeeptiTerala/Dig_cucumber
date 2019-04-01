@@ -1,5 +1,6 @@
 Given(/^I launch http://localhost:3000/signin$/) do
- pending
+ @LoginPage = signinPage.new(@browser)
+  @LoginPage.visit
 end
 
 And(/^I enter Email$/) do

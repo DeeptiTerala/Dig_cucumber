@@ -28,4 +28,55 @@ class LoginPage
   def verifyHomePageHeader()
     @browser.element(:text =&gt; "cucumber").wait_until_present
   end
+
+ def clickregisterButton
+    @btnregister.click
+  end
+  
+  def verifyHomePageHeader()
+    @browser.element(:text =&gt; "New Account").wait_until_present
+  end
+
+
+   
+   def entername(name)
+    @txtname.set name
+  end
+
+  
+   def entersurname(surname)
+    @txtname.set surnamename
+  end
+   
+   def enterdob(dob)
+    @txtdob.set dob
+  end
+  
+   def clickcreateprofile
+    @btncreateprofile.click
+  end
+
+   def enterstreet(street)
+    @txtname.set street
+  end
+
+   def enterhousenummer(housenumber)
+    @txtnum.set housenumber
+  end
+
+  def enterpostcode(postcode)
+    @txtnum.set postcode
+  end
+
+  def clickcreateaddress
+    @btncreateaddress.click
+  end
+
+  def clickcreateaddress
+    @btn.confirm.click
+  end
+
+
+
+
 end
