@@ -1,0 +1,8 @@
+Feature: Signin feature
+
+  Scenario: Signin page
+    Given I launch http://localhost:3000/signin
+    And I enter Email
+    And I enter Password
+    when i click Sign in
+    Then I should see the welcome message
